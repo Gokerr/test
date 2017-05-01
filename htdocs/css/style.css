@@ -1,0 +1,40 @@
+#inputDiv {
+    position: relative;
+    float: left;
+    width: 200px;
+
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+th, td {
+
+    text-align: left;
+    padding: 8px;
+}
+
+tr .edit{
+  width: auto;
+  display: none;
+}
+
+tr.edit .edit{
+  display: initial;
+}
+
+tr.edit .noedit{
+  display: none;
+}
+
+#tableID{
+  width: 650px;
+  height: 50px;
+}
+
+#div1{
+  position: relative;
+  float: left;
+
+}

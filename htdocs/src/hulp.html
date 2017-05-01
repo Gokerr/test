@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<head>
+<title>BeAid DataBank</title>
+</head>
+<nav class="navbar navbar-default">
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="home.html">ledenlijst</a></li>
+  <li role="presentation" class="active"><a href="hulp.html">Uitgegeven hulp</a></li>
+</ul>
+</nav>
+<body>
+  <div class="row">
+    <div class="col-6 col-md-4"></div>
+    <div class="col-6 col-md-4">
+      <div class="container" id="tableID">
+      <div class="filters">
+        <div class="filter-container">
+          <form class="form-inline">
+          <input id="ikzoek" class="filter form-control" autocomplete="off" name="naam" placeholder="naam" data-col="naam"/>
+          <input id="ikzoek" class="filter form-control" autocomplete="off" name="voornaam" placeholder="voornaam" data-col="voornaam"/>
+          <input id="ikzoek" class="filter form-control" autocomplete="off" name="Provincie" placeholder="Provincie" data-col="Provincie"/>
+          <label class="form-inline">Zoeken</label>
+        </form>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="container" id="inputDiv">
+        <div class="form-group">
+          <label>Naam</label>
+          <input type="text" id="naam" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Voornaam:</label>
+          <input type="text" id="voornaam" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Straat:</label>
+          <input type="text" id="straat" class="form-control"/>
+        </div>
+        <div class="form-group">
+      <label>Adres:</label>
+        <select id="adres" class="form-control">
+          <option value="">Provincies</option>
+          <option value="Antwerpen">Antwerpen</option>
+          <option value="Limburg">Limburg</option>
+          <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+          <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+          <option value="West-Vlaanderen">West-Vlaanderen</option>
+          <option value="Henegouwen">Henegouwen</option>
+          <option value="Luik">Luik</option>
+          <option value="Luxemburg">Luxemburg</option>
+          <option value="Namen">Namen</option>
+          <option value="Waals-Brabant">Waals-Brabant</option>
+        </select
+        </div>
+        <div class="form-group">
+          <label>Mail:</label>
+         <input type="email" id="mail" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Gsm:</label>
+          <input type="text" id="gsm" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label>Soort hulp:</label>
+          <select id="hulp" class="form-control">
+            <option value="">Hulp</option>
+            <option value="Voedselpakket">Voedselpakket</option>
+            <option value="Cadeaubon">Cadeaubon</option>
+            <option value="andere">andere</option>
+          </select>
+        </div>
+      <button id="voegToe" class="btn btn-primary">save</button>
+      </div>
+      </div>
+    <div class="col-xs-6">
+      <div class="container" id="div1">
+      <table id="ledenTable" class="table table-condensed">
+        <thead>
+          <tr>
+            <th>naam</th>
+            <th>voornaam</th>
+            <th>Straat</th>
+            <th>Provincie</th>
+            <th>mail</th>
+            <th>gsm</th>
+            <th>Soort verleende hulp</th>
+            <th>verwijderen</th>
+            <th>edit</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+<div id="data"></div>
+</body>
+</html>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='../js/multifilter.js'></script>
+<script src="../js/main2.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap.min.js"></script>

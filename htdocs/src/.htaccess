@@ -1,0 +1,10 @@
+
+
+
+
+#####THE FOLLOWING IS REQUIRED FOR PROTECTED FOLDERS
+AuthUserFile /home/vol12_1/byethost7.com/b7_19712337/htdocs/src//.htpasswd.a8c2fc122be4f81f1124271ed43c2a97
+AuthName password_required
+AuthType Basic
+Require valid-user
+########END REQUIRE
